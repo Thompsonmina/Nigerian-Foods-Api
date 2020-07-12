@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        
+
+        <title>  Nigerian Foods Api  </title>
+    
+    </head>
+
+    <body>   
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Nigerian Foods</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class= "container-fluid">
+            <div class=row>
+                <h1> Nigerian Foods Api</h1>               
+            </div>
+
+           <div class="row">
+                
+            <div class="col">
+                <p>  Api for some nigerian foods and thier nutritional information </p>
+                <p>  Foods are classfied into 9 categories </p>
+                
+                <ul>
+                    <li> rice-based </li>
+                    <li> soups and stews </li>
+                    <li> bean-based </li>
+                    <li> meat-based </li>
+                    <li> yam-based </li>
+                    <li> cassava-based </li>
+                    <li> snacks </li>
+                    <li> beverages </li>
+                    <li> others </li>
+                </ul>
+            </div>
+           
+           </div>
+
+            <div class="row">
+               <div class="col">                  
+                   <h2> Endpoints</h2> 
+
+                   <h3> api/foods/&lt;foodname&gt;</h3>
+                   <p> Get a json response of the specified food<br>
+                    example:<br>
+                    <pre> { foodname: 
+    { category: foodcategory, 
+      img_url: link to image of food,
+      nutritonal_information: 
+    {'calories': value , carbs: value, protein: value, fat: value, sodium: value, sugar: value}
+    }
+}</pre>
+                   URL: https://www.nigerianfoods.herokuapp.com/api/foods/&lt;foodame&gt; <br> HTTP method: GET<br> </p>
+
+                   <h3> api/foods</h3>
+                   <p> Get a json response of every food in the database <br> URL: https://www.nigerianfoods.herokuapp.com/api/foods <br> HTTP method: GET<br> </p>
+                   
+                   <h3>api/food_category/&lt;categoryname&gt;</h3>
+                   <p> Get a json response of a list of all the foods that belong to a particular category <br> URL: https://www.nigerianfoods.herokuapp.com/api/foods/category <br> HTTP method: GET<br> </p>
+               </div>
+            </div>
+
+        </div>
+        
+        
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

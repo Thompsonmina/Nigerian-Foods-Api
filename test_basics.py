@@ -109,7 +109,7 @@ class ApiFunctionality(unittest.TestCase):
 		db.create_all()
 
 
-		self.FOOD_ITEM = "soy milk"
+		self.FOOD_ITEM = "soy_milk"
 		self.CATEGORY = "beverages"
 		self.SINGLE_FOOD_URL = "/api/foods/" + self.FOOD_ITEM
 		self.FOOD_BY_CATEGORY_URL = "/api/food_category/" + self.CATEGORY

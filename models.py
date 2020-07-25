@@ -26,7 +26,7 @@ class Food(db.Model):
 		return {self.name:  
 					{"category":Category.query.get(self.category_id).name,
 				 	 "img_url":self.url,
-				 	 "nutritonal_information": {"calories":self.calories, 
+				 	 "nutritional_information": {"calories":self.calories, 
 				 	 "carbs":self.carbs, "protein":self.protein, "fat":self.fat,
 				 	 "sodium":self.sodium, "sugar": self.sugar}
 				 	}
